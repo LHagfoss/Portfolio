@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Home | LHagfoss</title>
+    </head>
+
+    <body>
+        <div id="cookies">
+            <div class="mt-5">
+                <div class="card p-3 cookie">
+                    <span>🍪 We use third party cookies to personalize content, ads and analyze site traffic.<br></span>
+                    <a href="#">Learn more<i class="fa fa-angle-right ml-2"></i></a>
+                    <div class="mt-4 text-right">
+                        <span onclick="decline()" class="mr-3 decline">Decline</span>
+                        <button onclick="accept()" class="btn btn-light btn-sm" type="button">Accept cookies</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <div class="logo">
+                <img src="assets/lh.logo-balls.jpg">
+                <a href="#">LHagfoss</a>
+            </div>
+            <div class="nav-links">
+                <a href="#">Docs</a>
+                <a href="#">Projects</a>
+                <a href="#">Blog</a>
+                <a href="#">Youtube</a>
+                <a href="#">About</a>
+            </div>
+            <button onclick="github()"><i class="ri-github-fill"></i> My Projects</button>
+        </nav>
+        
+        <div class="hero">
+            <div class="left-section">
+                <div class="top">
+                    <h2>Lucas Hagfoss</h2>
+                    <h2>Creative FullStack Web Developer</h2>
+                    <p>
+                        Design and code beautifully simple projects without overwhelming yourself with complexity. Enjoy
+                        your
+                        passion for creating with ease and love.
+                    </p>
+
+                    <div class="buttons">
+                        <button id="rotate" onclick="email()" class="doc">Contact Me<i class="ri-arrow-right-line"></i></button>
+                        <button onclick="github()" class="git"><i class="ri-github-fill"></i> My Github</button>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p>Other Socials:</p>
+                    <div class="icons">
+                        <a href="https://github.com/lhagfoss" target="_blank"><i class="ri-youtube-line"></i></a>
+                        <a href="https://github.com/lhagfoss" target="_blank"><i class="ri-twitter-x-line"></i></a>
+                        <a href="https://github.com/lhagfoss" target="_blank"><i class="ri-linkedin-box-line"></i></a>
+                        <a href="https://github.com/lhagfoss" target="_blank"><i class="ri-instagram-line"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <img src="assets/lh.logo.jpg">
+
+        </div>
+
+        <div class="about">
+            <p>About Web Development</p>
+            <h2>I create user-friendly, and beautiful websites and applications.</h2>
+            <div class="items">
+                <div class="item">
+                    <div class="inner">
+                        <img src="assets/item-1.jpg">
+                        <a href="#">Front-End Development</a>
+                        <p>Crafting visually appealing and responsive interfaces using HTML, CSS, and JavaScript frameworks
+                            like React and Vue.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="inner">
+                        <img src="assets/item-2.jpg">
+                        <a href="#">Back-End Development</a>
+                        <p>Building robust and scalable server-side applications with Node.js, Express, and databases like
+                            MongoDB and SQL.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="inner">
+                        <img src="assets/item-3.jpg">
+                        <a href="#">Full-Stack Integration</a>
+                        <p>Seamlessly integrating front-end and back-end technologies to deliver comprehensive web
+                            solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects">
+            <div class="inner">
+                <p class="debug"><i class="ri-command-line"></i> Troubleshoot & Debug</p>
+                <h2>Projects Showcase</h2>
+                <p class="info">Take a look at some of my notable projects, showcasing my ability to design and develop
+                    effective web solutions.</p>
+                <button onclick="github()">Explore my projects <i class="ri-arrow-right-line"></i></button>
+
+                <div class="items">
+                    <div class="item">
+                        <i class="ri-shopping-bag-4-line"></i>
+                        <a href="#">E-Commerce</a>
+                        <p>Developed full-featured e-commerce platform with secure payments.</p>
+                    </div>
+                    <div class="item">
+                        <i class="ri-id-card-line"></i>
+                        <a href="#">Portfolio Website</a>
+                        <p>Designed and built a personal portfolio website to showcase my projects and skills.</p>
+                    </div>
+                    <div class="item">
+                        <i class="ri-apps-line"></i>
+                        <a href="#">Social Media App</a>
+                        <p>Created a social media application with real-time updates and user interactions.</p>
+                    </div>
+                    <div class="item">
+                        <i class="ri-news-line"></i>
+                        <a href="#">Blog Platform</a>
+                        <p>Built a dynamic blog platform with content management features.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2>Interested in Working Together?</h2>
+            <div class="items">
+                <div class="item">
+                    <a href="https://github.com/lhagfoss" target="_blank">Schedule a call</a>
+                    <p>Let's discuss your project ideas and how I can help you.</p>
+                    <button>Schedule a Call</button>
+                </div>
+                <div class="item">
+                    <a href="https://github.com/lhagfoss" target="_blank">Explore My Work</a>
+                    <p>View my portfolio to see the kind of work I do for you.</p>
+                    <button onclick="github()">View My Work</button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Made with <i class="ri-heart-3-fill"></i> By LHagfoss</p>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <p>Copyright © 2024</p>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="./javascript/cookies.js"></script>
+        <script src="./javascript/script.js"></script>
+    </body>
+</html>
