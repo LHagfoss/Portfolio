@@ -14,8 +14,3 @@ function accept() {
 function decline() {
     alert('You have to accept the cookies!');
 }
-
-window.onload = function balls() {
-    document.getElementById("cookies").style.opacity = "1";
-};
-
