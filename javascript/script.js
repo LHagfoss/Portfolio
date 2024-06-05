@@ -2,6 +2,18 @@ window.onload = function() {
     window.scrollTo(0, 0);
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    const lenis = new Lenis();
+
+    lenis.on("scroll", ScrollTrigger.update);
+
+    gsap.ticker.add((time) => {
+        lenis.raf(time * 500);
+    });
+
+    gsap.ticker.lagSmoothing(0);
+};
+
 function github() {
     window.open('https://github.com/lhagfoss', '_blank');
 };
