@@ -1,13 +1,5 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const lenis = new Lenis();
-
-    lenis.on("scroll", ScrollTrigger.update);
-
-    gsap.ticker.add((time) => {
-        lenis.raf(time * 500);
-    });
-
-    gsap.ticker.lagSmoothing(0);
+window.onload = function balls() {
+    scrollTo(0, 0);
 };
 
 function github() {
