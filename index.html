@@ -1,169 +1,644 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./css/style.css">
-        <title>Home | LHagfoss</title>
-    </head>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <body>
-        <div id="cookies">
-            <div class="mt-5">
-                <div class="card p-3 cookie">
-                    <span>🍪 We use third party cookies to personalize content, ads and analyze site traffic.<br></span>
-                    <a href="#">Learn more<i class="fa fa-angle-right ml-2"></i></a>
-                    <div class="mt-4 text-right">
-                        <span onclick="decline()" class="mr-3 decline">Decline</span>
-                        <button onclick="accept()" class="btn btn-light btn-sm" type="button">Accept cookies</button>
-                    </div>
-                </div>
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage Grotesque:wght@300;400;500;600;700&display=swap"
+    />
+
+    <style>
+      @font-face {
+        font-family: "Clash Display";
+        src: url("./public/ClashDisplay-Medium.otf");
+        font-weight: 500;
+      }
+      @font-face {
+        font-family: "Clash Display";
+        src: url("./public/ClashDisplay-Semibold.otf");
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="width">
+      <header class="main">
+        <div class="navbar">
+          <a class="lhagfoss">LHagfoss</a>
+          <div class="nav-links">
+            <nav class="link-container">
+              <a class="about">About</a>
+              <div class="site-links">
+                <a class="work">Work</a>
+                <div class="link-separator">(6)</div>
+              </div>
+              <div class="site-links1">
+                <a class="insight">Insight</a>
+                <div class="div">(3)</div>
+              </div>
+              <a class="contact">Contact</a>
+            </nav>
+            <div class="button" onclick="github()">
+              <img class="button-child" alt="" src="./public/rectangle-2.svg" />
+
+              <div class="welcome-message">
+                <img
+                  class="greeting-icon"
+                  loading="lazy"
+                  alt=""
+                  src="./public/vector.svg"
+                />
+
+                <a class="hellolhagfoss">Hello@LHagfoss</a>
+              </div>
             </div>
+          </div>
         </div>
+      </header>
+      <section class="frame-parent">
+        <div class="user-status-parent">
+          <div class="user-status">
+            <div class="not-a-button">
+              <img
+                class="not-a-button-child"
+                alt=""
+                src="./public/rectangle-2.svg"
+              />
 
-        <nav>
-            <div class="logo">
-                <img src="assets/lh.logo-balls.jpg">
-                <a href="#">LHagfoss</a>
-            </div>
-            <div class="nav-links">
-                <a href="#">Docs</a>
-                <a href="#">Projects</a>
-                <a href="#">Blog</a>
-                <a href="#">Youtube</a>
-                <a href="#">About</a>
-            </div>
-            <button onclick="github()"><i class="ri-github-fill"></i> My Projects</button>
-        </nav>
-        
-        <div class="hero">
-            <div class="left-section">
-                <div class="top">
-                    <h2>Lucas Hagfoss</h2>
-                    <h2>Creative FullStack Web Developer</h2>
-                    <p>
-                        Design and code beautifully simple projects without overwhelming yourself with complexity. Enjoy
-                        your
-                        passion for creating with ease and love.
-                    </p>
-
-                    <div class="buttons">
-                        <button id="rotate" onclick="email()" class="doc">Contact Me<i class="ri-arrow-right-line"></i></button>
-                        <button onclick="github()" class="git"><i class="ri-github-fill"></i> My Github</button>
-                    </div>
+              <div class="user-status-content">
+                <div class="online-status">
+                  <div class="online-status-child"></div>
+                  <div class="online-status-item"></div>
                 </div>
-                <div class="bottom">
-                    <p>Other Socials:</p>
-                    <div class="icons">
-                        <a href="https://github.com/lhagfoss" target="_blank"><i class="ri-youtube-line"></i></a>
-                        <a href="https://github.com/lhagfoss" target="_blank"><i class="ri-twitter-x-line"></i></a>
-                        <a href="https://github.com/lhagfoss" target="_blank"><i class="ri-linkedin-box-line"></i></a>
-                        <a href="https://github.com/lhagfoss" target="_blank"><i class="ri-instagram-line"></i></a>
-                    </div>
-                </div>
+                <div class="available-for-work">Available for work</div>
+              </div>
             </div>
-
-            <img src="assets/lh.logo.jpg">
-
+          </div>
+          <p class="im-lucas-hagfoss-container">
+            <span>I'm Lucas Hagfoss a</span>
+            <span class="user-experience">
+              user experience & interface designer
+            </span>
+            <span
+              >from Norway, focusing on building functional websites that
+              will</span
+            >
+            <span class="increase-conversation"> increase conversation </span>
+            <span>and help</span>
+            <span class="reach-customers"> reach customers.</span>
+          </p>
         </div>
-
-        <div class="about">
-            <p>About Web Development</p>
-            <h2>I create user-friendly, and beautiful websites and applications.</h2>
-            <div class="items">
-                <div class="item">
-                    <div class="inner">
-                        <img src="assets/item-1.jpg">
-                        <a href="#">Front-End Development</a>
-                        <p>Crafting visually appealing and responsive interfaces using HTML, CSS, and JavaScript frameworks
-                            like React and Vue.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="inner">
-                        <img src="assets/item-2.jpg">
-                        <a href="#">Back-End Development</a>
-                        <p>Building robust and scalable server-side applications with Node.js, Express, and databases like
-                            MongoDB and SQL.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="inner">
-                        <img src="assets/item-3.jpg">
-                        <a href="#">Full-Stack Integration</a>
-                        <p>Seamlessly integrating front-end and back-end technologies to deliver comprehensive web
-                            solutions.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="worked-with">
+          <h1 class="worked-with1">
+            <span class="worked-with-txt-container">
+              <span>Worked </span>
+              <span class="with">with:</span>
+            </span>
+          </h1>
         </div>
-
+      </section>
+      <section class="portfolio">
         <div class="projects">
-            <div class="inner">
-                <p class="debug"><i class="ri-command-line"></i> Troubleshoot & Debug</p>
-                <h2>Projects Showcase</h2>
-                <p class="info">Take a look at some of my notable projects, showcasing my ability to design and develop
-                    effective web solutions.</p>
-                <button onclick="github()">Explore my projects <i class="ri-arrow-right-line"></i></button>
-
-                <div class="items">
-                    <div class="item">
-                        <i class="ri-shopping-bag-4-line"></i>
-                        <a href="#">E-Commerce</a>
-                        <p>Developed full-featured e-commerce platform with secure payments.</p>
-                    </div>
-                    <div class="item">
-                        <i class="ri-id-card-line"></i>
-                        <a href="#">Portfolio Website</a>
-                        <p>Designed and built a personal portfolio website to showcase my projects and skills.</p>
-                    </div>
-                    <div class="item">
-                        <i class="ri-apps-line"></i>
-                        <a href="#">Social Media App</a>
-                        <p>Created a social media application with real-time updates and user interactions.</p>
-                    </div>
-                    <div class="item">
-                        <i class="ri-news-line"></i>
-                        <a href="#">Blog Platform</a>
-                        <p>Built a dynamic blog platform with content management features.</p>
-                    </div>
-                </div>
+          <div class="bar">
+            <div class="latest-projects">
+              <h1 class="latest-projects1">
+                <span>Latest</span>
+                <span class="projects1"> Projects</span>
+              </h1>
             </div>
-        </div>
+            <button class="project-list" id="projectList">
+              <div class="button1">
+                <div class="check-out-all">Check out all</div>
+                <img
+                  class="eparrow-up-bold-icon"
+                  alt=""
+                  src="./public/eparrowupbold@2x.png"
+                />
+              </div>
+            </button>
+          </div>
+          <div class="gallery">
+            <div class="rectangle-parent">
+              <img
+                class="frame-child"
+                loading="lazy"
+                alt=""
+                src="./public/rectangle-5@2x.png"
+              />
 
-        <div class="contact">
-            <h2>Interested in Working Together?</h2>
-            <div class="items">
-                <div class="item">
-                    <a href="https://github.com/lhagfoss" target="_blank">Schedule a call</a>
-                    <p>Let's discuss your project ideas and how I can help you.</p>
-                    <button>Schedule a Call</button>
-                </div>
-                <div class="item">
-                    <a href="https://github.com/lhagfoss" target="_blank">Explore My Work</a>
-                    <p>View my portfolio to see the kind of work I do for you.</p>
-                    <button onclick="github()">View My Work</button>
-                </div>
+              <img
+                class="frame-item"
+                alt=""
+                src="./public/rectangle-5-1@2x.png"
+              />
             </div>
+            <div class="image-row">
+              <div class="image-column">
+                <img
+                  class="client-logo-list"
+                  loading="lazy"
+                  alt=""
+                  src="./public/rectangle-3@2x.png"
+                />
+
+                <div class="another-image-pair">
+                  <img
+                    class="more-image-names"
+                    loading="lazy"
+                    alt=""
+                    src="./public/rectangle-7@2x.png"
+                  />
+
+                  <img
+                    class="image-placeholder-three"
+                    alt=""
+                    src="./public/rectangle-5-2@2x.png"
+                  />
+                </div>
+              </div>
+              <img
+                class="image-row-child"
+                loading="lazy"
+                alt=""
+                src="./public/rectangle-6@2x.png"
+              />
+            </div>
+          </div>
         </div>
+      </section>
+      <section class="skills">
+        <div class="skill-description">
+          <div class="what-i-can-do-to-consistently-wrapper">
+            <p class="what-i-can-container">
+              <span class="what-i-can-do-to-consistently">
+                <span class="what-i-can">What I can do to </span>
+                <span>consistently </span>
+              </span>
+              <span class="and-effectively-support">
+                <span>and effectively</span>
+                <span> support </span>
+              </span>
+              <span class="your-business">
+                <span>your business?</span>
+              </span>
+            </p>
+          </div>
+          <div class="skill-list">
+            <div class="service-categories">
+              <div class="image-2-parent">
+                <img
+                  class="image-2-icon"
+                  loading="lazy"
+                  alt=""
+                  src="./public/image-2@2x.png"
+                />
 
-        <footer>
-            <p>Made with <i class="ri-heart-3-fill"></i> By LHagfoss</p>
-            <a href="#">Terms of Service</a>
-            <a href="#">Privacy Policy</a>
-            <p>Copyright © 2024</p>
-        </footer>
+                <div class="service-name-and-description">
+                  <h1 class="branding">Branding</h1>
+                  <p class="i-love-creating">
+                    I love creating branding, especially logos, icons and key
+                    visuals. I designed branding elements for e.g. for Lidl,
+                    Anna Lewandowska, Kindekraft, John Dog and many other
+                    brands.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="service-categories1">
+              <div class="image-3-parent">
+                <img
+                  class="image-3-icon"
+                  loading="lazy"
+                  alt=""
+                  src="./public/image-3@2x.png"
+                />
 
-        <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.12.2/intersection-observer.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-        <script src="https://unpkg.com/lenis@1.1.1/dist/lenis.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="./javascript/cookies.js"></script>
-        <script src="./javascript/script.js"></script>
-    </body>
+                <div class="ux-design-parent">
+                  <h1 class="ux-design">UX Design</h1>
+                  <p class="i-create-lo-fi">
+                    I create lo-fi mock-ups, conduct internal workshops, analyze
+                    data, create personas, and propose A/B test hypotheses to
+                    improve sales effectiveness.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="service-categories2">
+              <div class="image-4-parent">
+                <img
+                  class="image-4-icon"
+                  loading="lazy"
+                  alt=""
+                  src="./public/image-4@2x.png"
+                />
+
+                <div class="ui-design-parent">
+                  <h1 class="ui-design">UI Design</h1>
+                  <p class="i-am-proficient">
+                    I am proficient in Figma, Adobe XD, and Atomic Design for
+                    design systems. I review developer implementations, analyze
+                    data, and apply my years of graphic design experience to
+                    create modern, aesthetic User Interfaces.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="insights">
+        <div class="insight-list">
+          <div class="bar1">
+            <div class="latest-insights">
+              <div class="insight-title">
+                <h1 class="latest-insights1">
+                  <span>Latest</span>
+                  <span class="insights1"> Insights</span>
+                </h1>
+                <div class="placeholder">(3)</div>
+              </div>
+            </div>
+            <div class="buttons">
+              <div class="button-left">
+                <div class="insight-navigation-icons">
+                  <img
+                    class="eparrow-up-bold-icon1"
+                    alt=""
+                    src="./public/eparrowupbold-1@2x.png"
+                  />
+                </div>
+              </div>
+              <div class="button-right">
+                <div class="eparrow-up-bold-wrapper">
+                  <img
+                    class="eparrow-up-bold-icon2"
+                    alt=""
+                    src="./public/eparrowupbold-2@2x.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="featured-insights">
+            <div class="component-2">
+              <div class="image-6-parent">
+                <img
+                  class="image-6-icon"
+                  alt=""
+                  src="./public/image-6@2x.png"
+                />
+
+                <div class="blog-post-descriptions">
+                  <div class="blog-post-description-content">
+                    <div class="blog-post-titles-and-categorie">
+                      <div class="how-does-modern-container">
+                        <p class="how-does-modern">
+                          How does modern website design attract
+                        </p>
+                        <p class="more-clients">more clients?</p>
+                      </div>
+                      <div class="webdesign">Webdesign</div>
+                    </div>
+                    <img
+                      class="vector-icon"
+                      alt=""
+                      src="./public/vector-1.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="component-21">
+              <div class="frame-group">
+                <div class="image-6-group">
+                  <img
+                    class="image-6-icon1"
+                    alt=""
+                    src="./public/image-6@2x.png"
+                  />
+
+                  <img
+                    class="spotify-smart-shuffle-thumbnai-icon"
+                    alt=""
+                    src="./public/spotifysmartshufflethumbnail-1@2x.png"
+                  />
+                </div>
+                <div class="frame-wrapper">
+                  <div class="frame-container">
+                    <div class="discover-new-music-with-spoiti-parent">
+                      <div class="discover-new-music-container">
+                        <p class="discover-new-music">
+                          Discover New Music with Spoitify’s Smart
+                        </p>
+                        <p class="shuffle">Shuffle!</p>
+                      </div>
+                      <div class="tech-news">Tech News</div>
+                    </div>
+                    <img
+                      class="vector-icon1"
+                      alt=""
+                      src="./public/vector-1.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="component-22">
+              <div class="group-div">
+                <div class="image-6-container">
+                  <img
+                    class="image-6-icon2"
+                    alt=""
+                    src="./public/image-6@2x.png"
+                  />
+
+                  <img
+                    class="image-5-icon"
+                    alt=""
+                    src="./public/image-5@2x.png"
+                  />
+                </div>
+                <div class="frame-div">
+                  <div class="frame-parent1">
+                    <div class="what-does-a-prperly-designer-f-parent">
+                      <div class="what-does-a-container">
+                        <p class="what-does-a">
+                          What does a prperly designer filtration
+                        </p>
+                        <p class="system-look-like">
+                          system look like? - Kinderkraft e-commerce
+                        </p>
+                      </div>
+                      <div class="case-study">Case Study</div>
+                    </div>
+                    <img
+                      class="vector-icon2"
+                      alt=""
+                      src="./public/vector-3.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="experience-content-wrapper">
+        <div class="experience-content">
+          <div class="experience-description">
+            <h1 class="experience">Experience</h1>
+            <p class="as-a-freelancer">
+              As a freelancer I worked on the UX / UI of websites from the
+              cryptocurrency, e-commerce, CSR, RCP industries. I am also
+              constantly expanding my knowledge in the front-end area and coding
+              simple websites.
+            </p>
+          </div>
+          <div class="buttons1">
+            <div class="button-1" id="button1Container">
+              <div class="game-info">
+                <div class="game-icons-and-names">
+                  <img
+                    class="image-7-icon"
+                    loading="lazy"
+                    alt=""
+                    src="./public/image-7@2x.png"
+                  />
+
+                  <div class="game-names-and-genres">
+                    <b class="valorant">VALORANT</b>
+                    <div class="tactical-shooter">Tactical shooter</div>
+                  </div>
+                </div>
+                <div class="june-2-">June 2 - 2020</div>
+              </div>
+            </div>
+            <div class="button-2" id="button2Container">
+              <div class="frame-parent2">
+                <div class="image-8-parent">
+                  <img
+                    class="image-8-icon"
+                    loading="lazy"
+                    alt=""
+                    src="./public/image-8@2x.png"
+                  />
+
+                  <div class="fortnite-parent">
+                    <b class="fortnite">Fortnite</b>
+                    <div class="battle-royale">Battle Royale</div>
+                  </div>
+                </div>
+                <div class="july-21-">July 21 - 2017</div>
+              </div>
+            </div>
+            <div class="button-3" id="button3Container">
+              <div class="frame-parent3">
+                <div class="image-9-parent">
+                  <img
+                    class="image-9-icon"
+                    loading="lazy"
+                    alt=""
+                    src="./public/image-9@2x.png"
+                  />
+
+                  <div class="counter-strike-2-parent">
+                    <b class="counter-strike-2">Counter-Strike 2</b>
+                    <div class="fps">FPS</div>
+                  </div>
+                </div>
+                <div class="sep-27-">Sep 27 - 2023</div>
+              </div>
+            </div>
+            <div class="button-4" id="button4Container">
+              <div class="frame-parent4">
+                <div class="image-10-parent">
+                  <img
+                    class="image-10-icon"
+                    loading="lazy"
+                    alt=""
+                    src="./public/image-10@2x.png"
+                  />
+
+                  <div class="minecraft-parent">
+                    <b class="minecraft">Minecraft</b>
+                    <div class="sandbox-multisingleplayer">
+                      Sandbox multi/singleplayer
+                    </div>
+                  </div>
+                </div>
+                <div class="nov-18-">Nov 18 - 2011</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="main1">
+        <div class="contact-container-wrapper">
+          <div class="contact-container">
+            <div class="contact-details">
+              <div class="contact-call-to-action">
+                <h1 class="lets-talk-about-container">
+                  <p class="lets-talk-about">
+                    <span class="lets-talk">Let’s talk </span>
+                    <span>about </span>
+                  </p>
+                  <p class="your-project">
+                    <span>
+                      <span class="your-project1">your project</span>
+                    </span>
+                  </p>
+                </h1>
+                <div class="contact-form">
+                  <button class="github-link" id="githubLink">
+                    <div class="button2">
+                      <img
+                        class="button-icon"
+                        alt=""
+                        src="./public/button.svg"
+                      />
+
+                      <div class="form-submission">
+                        <a class="my-github">My Github</a>
+                        <img
+                          class="icon-park-outlinesend"
+                          alt=""
+                          src="./public/iconparkoutlinesend.svg"
+                        />
+                      </div>
+                    </div>
+                  </button>
+                  <div class="email-option">
+                    <b class="or-copy-an"
+                      >or copy an email: lucash.1707@gmail.com</b
+                    >
+                    <img
+                      class="email-icon"
+                      alt=""
+                      src="./public/vector-4.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="current-activity">
+                <div class="activity-details">
+                  <div class="activity-type">
+                    <div class="played">Played</div>
+                    <div class="media-status">
+                      <div class="offline">
+                        <div class="playing-indicators"></div>
+                        <div class="listening-indicators"></div>
+                      </div>
+                      <div class="offline1">Offline</div>
+                    </div>
+                  </div>
+                  <div class="media-image">
+                    <img
+                      class="image-8-icon1"
+                      alt=""
+                      src="./public/image-8-1@2x.png"
+                    />
+
+                    <div class="media-title">
+                      <b class="valorant1">VALORANT</b>
+                      <b class="riot-games">Riot Games</b>
+                    </div>
+                  </div>
+                </div>
+                <div class="activity-details1">
+                  <div class="listening-parent">
+                    <div class="listening">Listening</div>
+                    <div class="online-parent">
+                      <div class="online">
+                        <div class="online-child"></div>
+                        <div class="online-item"></div>
+                      </div>
+                      <div class="currently">Currently</div>
+                    </div>
+                  </div>
+                  <div class="image-11-parent">
+                    <img
+                      class="image-11-icon"
+                      loading="lazy"
+                      alt=""
+                      src="./public/image-11@2x.png"
+                    />
+
+                    <div class="just-the-two-of-us-parent">
+                      <div class="just-the-two-container">
+                        <p class="just-the">Just the</p>
+                        <p class="two-of-us">Two of Us</p>
+                      </div>
+                      <div class="grover-washintong-jr-container">
+                        <p class="grover-washintong-jr">
+                          Grover Washintong, jr.,
+                        </p>
+                        <p class="bill-withers">Bill Withers</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer">
+              <div class="footer-background"></div>
+              <div class="footer-info">
+                <div class="footer-details">
+                  <div class="version">Version</div>
+                  <b class="lhagfoss1">2024 © LHagfoss </b>
+                </div>
+                <div class="footer-details1">
+                  <div class="local-time">Local Time</div>
+                  <b class="utc1-kristiansand-norway"
+                    >25:15 UTC+1 Kristiansand, Norway
+                  </b>
+                </div>
+                <div class="socials-container">
+                  <div class="socials">Socials</div>
+                  <div class="social-links">
+                    <div class="social-icons" id="socialIconsContainer">
+                      <img
+                        class="platform-icon"
+                        alt=""
+                        src="./public/vector-5.svg"
+                      />
+
+                      <b class="twitch">Twitch</b>
+                    </div>
+                    <div class="social-icons1" id="socialIconsContainer1">
+                      <img
+                        class="vector-icon3"
+                        alt=""
+                        src="./public/vector-6.svg"
+                      />
+
+                      <b class="youtube">YouTube</b>
+                    </div>
+                    <div class="social-icons2" id="socialIconsContainer2">
+                      <img
+                        class="vector-icon4"
+                        alt=""
+                        src="./public/vector-7.svg"
+                      />
+
+                      <b class="snapchat">Snapchat</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.12.2/intersection-observer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.1/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
