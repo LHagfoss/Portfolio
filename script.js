@@ -24,6 +24,19 @@ function copyEmail() {
   }, 3000);
 }
 
+function topCopyEmail() {
+  navigator.clipboard.writeText("lucash.1707@gmail.com");
+  var messageElement = document.createElement("div");
+  messageElement.textContent = "E-Mail has been copied to your clipboard!";
+  messageElement.classList.add("CopiedMsgTop");
+
+  var emailText = document.querySelector(".button");
+  emailText.appendChild(messageElement);
+
+  setTimeout(function() {
+    emailText.removeChild(messageElement);
+  }, 3000);
+}
 
 var projectList = document.getElementById("projectList");
 if (projectList) {
