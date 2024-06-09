@@ -1,23 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const widthDisplay = document.getElementById("widthDisplay");
-  const mouseDisplay = document.getElementById("mouseDisplay");
-
-  function updateWidthDisplay() {
-    widthDisplay.textContent = "Current Width: " + window.innerWidth + "px";
-  }
-
-  function updateMousePosition(event) {
-    mouseDisplay.textContent = "Mouse Position: " + event.clientX + "px, " + event.clientY + "px";
-  }
-
-  updateWidthDisplay();
-  updateMousePosition({ clientX: 0, clientY: 0 }); // Initialize mouse position
-
-  window.addEventListener("resize", updateWidthDisplay);
-  document.addEventListener("mousemove", updateMousePosition);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
   const lenis = new Lenis();
 
   lenis.on("scroll", ScrollTrigger.update);
