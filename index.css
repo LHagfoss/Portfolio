@@ -2018,6 +2018,16 @@
   letter-spacing: normal;
 }
 
+.CopiedMsg {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  top: 25px;
+  border-radius: 15px;
+  z-index: 9999;
+}
+
 @media screen and (max-width: 1616px) {
   .navbar {
     width: 1530px;

@@ -1,13 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
   const widthDisplay = document.getElementById("widthDisplay");
+  const mouseDisplay = document.getElementById("mouseDisplay");
 
   function updateWidthDisplay() {
     widthDisplay.textContent = "Current Width: " + window.innerWidth + "px";
   }
 
+  function updateMousePosition(event) {
+    mouseDisplay.textContent = "Mouse Position: " + event.clientX + "px, " + event.clientY + "px";
+  }
+
   updateWidthDisplay();
+  updateMousePosition({ clientX: 0, clientY: 0 }); // Initialize mouse position
 
   window.addEventListener("resize", updateWidthDisplay);
+  document.addEventListener("mousemove", updateMousePosition);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -27,24 +34,12 @@ function copyEmail() {
   var messageElement = document.createElement("div");
   messageElement.textContent = "E-Mail has been copied to your clipboard!";
   messageElement.classList.add("CopiedMsg");
-  messageElement.style.position = "absolute";
-  messageElement.style.zIndex = "9999";
-  messageElement.style.backgroundColor = "#333";
-  messageElement.style.color = "#fff";
-  messageElement.style.padding = "10px";
-  messageElement.style.borderRadius = "5px";
-  document.body.appendChild(messageElement);
 
-  function moveMessage(event) {
-    messageElement.style.left = event.clientX + "px";
-    messageElement.style.top = event.clientY + "px";
-  }
-
-  document.addEventListener("mousemove", moveMessage);
+  var emailText = document.querySelector(".or-copy-an");
+  emailText.appendChild(messageElement);
 
   setTimeout(function() {
-    document.removeEventListener("mousemove", moveMessage);
-    document.body.removeChild(messageElement);
+    emailText.removeChild(messageElement);
   }, 3000);
 }
 
