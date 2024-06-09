@@ -2017,6 +2017,191 @@
   line-height: normal;
   letter-spacing: normal;
 }
+
+@media screen and (max-width: 1616px) {
+  .navbar {
+    width: 1530px;
+  }
+
+  .service-categories {
+    width: 500px;
+    height: 550px;
+    border-radius: var(--br-28xl);
+    background-color: var(--color-gray-100);
+    overflow: hidden;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    padding: var(--padding-11xl) 46px var(--padding-17xl);
+    box-sizing: border-box;
+    min-width: 454px;
+    max-width: 100%;
+  }
+
+  .service-categories1 {
+    width: 500px;
+    height: 550px;
+    border-radius: var(--br-28xl);
+    background-color: var(--color-gray-100);
+    overflow: hidden;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    padding: var(--padding-11xl) 46px var(--padding-17xl);
+    box-sizing: border-box;
+    min-width: 454px;
+    max-width: 100%;
+  }
+
+  .service-categories2 {
+    width: 500px;
+    height: 550px;
+    border-radius: var(--br-28xl);
+    background-color: var(--color-gray-100);
+    overflow: hidden;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    padding: var(--padding-11xl) 46px var(--padding-17xl);
+    box-sizing: border-box;
+    min-width: 454px;
+    max-width: 100%;
+  }
+
+  .component-21, .component-2, .component-22 {
+    max-width: 100%;
+    min-width: 500px;
+    width: 500px;
+    height: 700px;
+    min-height: 700px;
+    max-height: 700px;
+  }
+
+  #widthDisplay {
+    top: 100px;
+  }
+}
+
+@media screen and (max-width: 1720px){
+
+  .navbar {
+    width: 1635px;
+  }
+
+  #widthDisplay {
+    top: 100px;
+  }
+
+  .service-categories {
+    width: 500px;
+    height: 550px;
+    border-radius: var(--br-28xl);
+    background-color: var(--color-gray-100);
+    overflow: hidden;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    padding: var(--padding-11xl) 46px var(--padding-17xl);
+    box-sizing: border-box;
+    min-width: 454px;
+    max-width: 100%;
+  }
+
+  .service-categories1 {
+    width: 500px;
+    height: 550px;
+    border-radius: var(--br-28xl);
+    background-color: var(--color-gray-100);
+    overflow: hidden;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    padding: var(--padding-11xl) 46px var(--padding-17xl);
+    box-sizing: border-box;
+    min-width: 454px;
+    max-width: 100%;
+  }
+
+  .service-categories2 {
+    width: 500px;
+    height: 550px;
+    border-radius: var(--br-28xl);
+    background-color: var(--color-gray-100);
+    overflow: hidden;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    padding: var(--padding-11xl) 46px var(--padding-17xl);
+    box-sizing: border-box;
+    min-width: 454px;
+    max-width: 100%;
+  }
+
+  .component-21, .component-2, .component-22 {
+    max-width: 100%;
+    min-width: 500px;
+    width: 500px;
+    height: 700px;
+    min-height: 700px;
+    max-height: 700px;
+  }
+}
+
+@media screen and (max-width: 1432px) {
+  .navbar {
+    width: 1345px;
+  }
+
+  .service-categories {
+    width: 420px;
+    height: 550px;
+    border-radius: var(--br-28xl);
+    background-color: var(--color-gray-100);
+    overflow: hidden;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    padding: var(--padding-11xl) 46px var(--padding-17xl);
+    box-sizing: border-box;
+    min-width: 420px;
+    max-width: 100%;
+  }
+
+  .service-categories1 {
+    width: 420px;
+    height: 550px;
+    border-radius: var(--br-28xl);
+    background-color: var(--color-gray-100);
+    overflow: hidden;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    padding: var(--padding-11xl) 46px var(--padding-17xl);
+    box-sizing: border-box;
+    min-width: 420px;
+    max-width: 100%;
+  }
+
+  .service-categories2 {
+    width: 420px;
+    height: 550px;
+    border-radius: var(--br-28xl);
+    background-color: var(--color-gray-100);
+    overflow: hidden;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    padding: var(--padding-11xl) 46px var(--padding-17xl);
+    box-sizing: border-box;
+    min-width: 420px;
+    max-width: 100%;
+  }
+
+  .component-21, .component-2, .component-22 {
+    max-width: 100%;
+    min-width: 420px;
+    width: 420px;
+    height: 700px;
+    min-height: 700px;
+    max-height: 700px;
+  }
+
+  .frame-item {
+    width: 500px;
+  }
+}
+
 /* @media screen and (max-width: 1800px) {
   .frame-item {
     flex: 1;
