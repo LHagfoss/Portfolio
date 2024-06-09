@@ -2028,9 +2028,35 @@
   z-index: 9999;
 }
 
+#widthDisplay {
+  position: fixed; 
+  color: #fff; 
+  bottom: 850px; 
+  font-family: Clash Display; 
+  z-index: 2; 
+  left: 44px;
+}
+
+#mouseDisplay {
+  position: fixed; 
+  color: #fff; 
+  bottom: 820px; 
+  font-family: Clash Display; 
+  z-index: 2; 
+  left: 44px;
+}
+
 @media screen and (max-width: 1616px) {
   .navbar {
-    width: 1530px;
+    max-width: 1530px;
+  }
+
+  #mouseDisplay {
+    position: fixed;
+    color: #fff; 
+    bottom: 850px; 
+    font-family: Clash Display; 
+    z-index: 2; left: 44px;
   }
 
   .service-categories {
