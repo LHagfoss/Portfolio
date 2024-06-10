@@ -1,3 +1,13 @@
+html, body {
+  overflow-y: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .navbar {
   position: fixed;
   width: 95.5%;
@@ -342,11 +352,20 @@
 .project-list {
   display: flex;
   align-items: center;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .project-list:hover .button1 {
-  transform: scale(1.05);
+  transform: scale(1.03);
+}
+
+.project-list:hover {
+  background-color: #74747450;
+}
+
+
+.project-list:hover .check-out-all {
+  text-decoration: underline;
 }
 
 .project-list {
@@ -447,6 +466,14 @@
   overflow: hidden;
   object-fit: cover;
   min-height: 1146px;
+}
+.image-row-child, .image-placeholder-three, .more-image-names, .client-logo-list, .frame-item, .frame-child {
+  transition: all 0.5s ease-in-out;
+}
+
+.image-row-child:hover, .image-placeholder-three:hover, .more-image-names:hover, .client-logo-list:hover, .frame-item:hover, .frame-child:hover {
+  scale: 1.01;
+  opacity: 0.7;
 }
 .gallery,
 .image-row {
@@ -2374,6 +2401,10 @@
     width: 94%;
   }
 
+  .button-1, .button-2, .button-3, .button-4  {
+    max-width: 640px;
+  }
+
   .service-categories {
     width: 420px;
     height: 550px;
@@ -2494,6 +2525,10 @@
 @media screen and (max-width: 1420px) {
   .navbar {
     width: 94%;
+  }
+
+  .button-1, .button-2, .button-3, .button-4  {
+    max-width: 600px;
   }
 
   .service-categories {
