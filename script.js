@@ -1,14 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const lenis = new Lenis();
+  const lenis = new Lenis();https://www.youtube.com/
 
   lenis.on("scroll", ScrollTrigger.update);
 
   gsap.ticker.add((time) => {
-      lenis.raf(time * 500);
+      lenis.raf(time * 900);
   });
 
   gsap.ticker.lagSmoothing(0);
 });
+
+function updateWidth() {
+  const pageWidth = document.documentElement.scrollWidth;
+  document.getElementById("widthDisplay").innerHTML = `Webpage Width: ${pageWidth}px`;
+}
+
+updateWidth();
+setInterval(updateWidth, 100);
+
 
 function copyEmail() {
   navigator.clipboard.writeText("lucash.1707@gmail.com");
